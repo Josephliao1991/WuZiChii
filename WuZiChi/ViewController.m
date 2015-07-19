@@ -47,10 +47,12 @@
     
     for (NSArray *columnArray in matrixArray) {
         
-        NSLog(@"| %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@|",
+        NSLog(@"| %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ |",
               columnArray[0],columnArray[1],columnArray[2],columnArray[3],
               columnArray[4],columnArray[5],columnArray[6],columnArray[7],
-              columnArray[8],columnArray[9],columnArray[10],columnArray[11]);
+              columnArray[8],columnArray[9],columnArray[10],columnArray[11],
+              columnArray[12],columnArray[13],columnArray[14],columnArray[15],
+              columnArray[16],columnArray[17],columnArray[18]);
         
     }
 

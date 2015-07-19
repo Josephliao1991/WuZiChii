@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BAA8A77E-D075-46BD-8D5A-C6ED90D3D1EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WuZiChi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E30D664C14C5DA33F251B63AEB480382A8F84FBC</key>
+		<string>https://github.com/Josephliao1991/WuZiChii.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WuZiChi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E30D664C14C5DA33F251B63AEB480382A8F84FBC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Josephliao1991/WuZiChii.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E30D664C14C5DA33F251B63AEB480382A8F84FBC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E30D664C14C5DA33F251B63AEB480382A8F84FBC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WuZiChii</string>
+		</dict>
+	</array>
+</dict>
+</plist>
