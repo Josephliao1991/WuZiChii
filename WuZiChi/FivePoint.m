@@ -12,6 +12,7 @@
 
 {
     
+    BOOL isStopNow;
     BOOL nowPlayer; //True is Black // False is White
     NSMutableArray *matrixArray;
     MatrixView *theMatrix;
@@ -26,7 +27,8 @@
     
     self = [super init];
     
-    nowPlayer = YES;
+    isStopNow   = NO;
+    nowPlayer   = YES;
     
     //set Empty Matrix Arrey
     [self setEmptyMatrixWithRow:row withColumn:column];
@@ -53,6 +55,10 @@
 #pragma mark -
 
 - (void)matrixView:(MatrixView *)matrix didTouchDot:(DotView *)dotView{
+    
+    if (isStopNow) {
+        return;
+    }
     
     if (![self checkLegelWithIndexPath:dotView.indexPath]) {
         return;
@@ -99,8 +105,12 @@
                 [self.delegate fivePoint:self didCheckGameResult:gameResult_WhiteWin];
             }
             
+            //stop the game            
+            isStopNow = YES;
+            
             //reset Player to Black
             nowPlayer = YES;
+            
 
             break;
             
@@ -111,6 +121,9 @@
             }else{
                 [self.delegate fivePoint:self didCheckGameResult:gameResult_WhiteBrokenRule];
             }
+            
+            //stop the game
+            isStopNow = YES;
             
             //reset Player to Black
             nowPlayer = YES;
@@ -179,6 +192,7 @@
     [theMatrix resetMatrix];
     [self setEmptyMatrixWithRow:[theMatrix getMatrixNumberOfRow] withColumn:[theMatrix getMatrixNumberOfColumn]];
     
+    isStopNow = NO;
 }
 
 @end

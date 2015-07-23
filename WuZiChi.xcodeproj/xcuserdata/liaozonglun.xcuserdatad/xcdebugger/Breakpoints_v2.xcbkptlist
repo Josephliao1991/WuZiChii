@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458929610.206342"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-matrixView:didTouchDot:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458935020.722333"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-setCheckWithIndexPath:withPlayer:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458924659.085135"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-matrixView:didTouchDot:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/ViewController.m"
-            timestampString = "458992509.124278"
+            timestampString = "459354344.341492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "@implementation ViewController"
-            landmarkType = "3">
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "-fivePoint:didCheckGameResult:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458935020.722333"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "-setEmptyMatrixWithRow:withColumn:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458935020.722333"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "-setEmptyMatrixWithRow:withColumn:"
             landmarkType = "5">
          </BreakpointContent>
@@ -138,39 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458988739.157398"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "+checkHorizontalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458988739.157398"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "+checkHorizontalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458988739.157398"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
@@ -182,15 +150,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WuZiChi/WinnerChecker.m"
+            timestampString = "459355428.993773"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "+checkHorizontalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WuZiChi/WinnerChecker.m"
+            timestampString = "459355428.993773"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "+checkHorizontalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458935020.722333"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "-resetGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458935020.722333"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "-setEmptyMatrixWithRow:withColumn:"
             landmarkType = "5">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/FivePoint.m"
-            timestampString = "458935020.722333"
+            timestampString = "459353716.406414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "-setEmptyMatrixWithRow:withColumn:"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458988040.246"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "+checkHorizontalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989377.499733"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -362,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989382.815544"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -378,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989383.601286"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989385.35547"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989386.089247"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989387.637271"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989389.159321"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>
@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WuZiChi/WinnerChecker.m"
-            timestampString = "458989398.610714"
+            timestampString = "459355428.993773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "+checkVerticalWithNowRow:withNowColumn:withCheckPlayer:withMatrix:"
             landmarkType = "5">
          </BreakpointContent>

@@ -89,7 +89,11 @@
             }else if (nowCountCloumn>0 && nowCountCloumn<[matrix count] && martixPoint != checkPlayer){
                 
                 if (bingoCount == 4 && lastPoint == checkPlayer) {
-                    endPoint = [NSIndexPath indexPathForItem:nowRow inSection:nowCountCloumn -1];
+                    
+                    if (endPoint == nil && martixPoint == 0) {
+                        endPoint = [NSIndexPath indexPathForItem:nowRow inSection:nowCountCloumn -1];
+                    }
+
                 }else{
                     fourPointWinCheck = NO;
                     startPoint = nil;
@@ -162,7 +166,10 @@
             }else if (nowCountRow>0 && nowCountRow<[matrix count] && martixPoint != checkPlayer){
                 
                 if (bingoCount == 4 && lastPoint == checkPlayer) {
-                    endPoint = [NSIndexPath indexPathForItem:nowCountRow -1 inSection:nowColumn];
+                    if (endPoint == nil && martixPoint == 0) {
+                        endPoint = [NSIndexPath indexPathForItem:nowCountRow -1 inSection:nowColumn];
+                    }
+                    
                 }else{
                     fourPointWinCheck = NO;
                     startPoint = nil;
@@ -239,7 +246,10 @@
                       && nowCountColumn>0 && nowCountColumn<[matrix count] && martixPoint != checkPlayer){
                 
                 if (bingoCount == 4 && lastPoint == checkPlayer) {
-                    endPoint = [NSIndexPath indexPathForItem:nowCountRow +1 inSection:nowCountColumn -1];
+                    
+                    if (endPoint == nil && martixPoint == 0) {
+                        endPoint = [NSIndexPath indexPathForItem:nowCountRow +1 inSection:nowCountColumn -1];
+                    }
                 }else{
                     fourPointWinCheck = NO;
                     startPoint = nil;
@@ -318,7 +328,9 @@
                       && nowCountColumn>0 && nowCountColumn<[matrix count] && martixPoint != checkPlayer){
                 
                 if (bingoCount == 4 && lastPoint == checkPlayer) {
-                    endPoint = [NSIndexPath indexPathForItem:nowCountRow +1 inSection:nowCountColumn +1];
+                    if (endPoint == nil && martixPoint == 0) {
+                        endPoint = [NSIndexPath indexPathForItem:nowCountRow +1 inSection:nowCountColumn +1];
+                    }
                 }else{
                     fourPointWinCheck = NO;
                     startPoint = nil;

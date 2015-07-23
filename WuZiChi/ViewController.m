@@ -11,6 +11,8 @@
 
 @interface ViewController ()<FivePointDelegate>
 
+@property (strong, nonatomic) FivePoint *gameController;
+
 @end
 
 @implementation ViewController
@@ -19,7 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    /* UIAlertController */
+    
+    
     
     
 }
@@ -50,12 +53,20 @@
         CGRect rect = CGRectMake(0, self.view.frame.size.height/2-self.view.frame.size.width/2,
                                  self.view.frame.size.width, self.view.frame.size.height);
         
-        FivePoint *gameController = [[FivePoint alloc] initWithFrame:rect
-                                                             withRow:[num.text integerValue]
-                                                          withColumn:[num.text integerValue]
-                                                        withDelegate:self];
-        [gameController show];
+        self.gameController = [[FivePoint alloc] initWithFrame:rect
+                                                  withRow:[num.text integerValue]
+                                               withColumn:[num.text integerValue]
+                                             withDelegate:self];
+        [self.gameController show];
         
+        
+        UIButton *reStartGameButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+        reStartGameButton.frame = CGRectMake(10, 10, self.view.frame.size.width*0.2, self.view.frame.size.width*0.1);
+        reStartGameButton.backgroundColor = [UIColor lightGrayColor];
+        reStartGameButton.alpha           = 0.5;
+        [reStartGameButton addTarget:self action:@selector(reStartGame) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view addSubview:reStartGameButton];
         
     }];
     
@@ -72,6 +83,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark -
+#pragma mark    Button Action Method
+#pragma mark -
+
+- (void)reStartGame{
+    
+    UIAlertController *alertController =
+    [UIAlertController alertControllerWithTitle:@"重新開始？" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    /*
+     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+     textField.placeholder = @"";
+     textField.secureTextEntry = YES;
+     }];
+     */
+    
+    UIAlertAction *cancelAction =
+    [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        //more to do
+    }];
+    UIAlertAction *doneAction =
+    [UIAlertAction actionWithTitle:@"重來" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //more to do
+        [self.gameController resetGame];
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:doneAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
 
 #pragma mark -
 #pragma mark FivaPoint Delegate
@@ -128,13 +170,20 @@
     
     
     UIAlertAction *doneAction =
-    [UIAlertAction actionWithTitle:@"確認" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    [UIAlertAction actionWithTitle:@"重新開始" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         //more to do
         [fivePoint resetGame];
         
     }];
     
+    UIAlertAction *checkGameAction =
+    [UIAlertAction actionWithTitle:@"觀看結果" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //
+    }];
+    
     [alertController addAction:doneAction];
+    [alertController addAction:checkGameAction];
+    
     [self presentViewController:alertController animated:YES completion:nil];
     
 
