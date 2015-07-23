@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					4E4D0A441B5A746D008EAAA3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = B8LRBM6UYQ;
 					};
 					4E4D0A601B5A746D008EAAA3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -385,7 +386,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WuZiChi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -395,7 +398,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WuZiChi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -454,6 +459,7 @@
 				4E4D0A6D1B5A746D008EAAA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E4D0A6E1B5A746D008EAAA3 /* Build configuration list for PBXNativeTarget "WuZiChiTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +468,7 @@
 				4E4D0A701B5A746D008EAAA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

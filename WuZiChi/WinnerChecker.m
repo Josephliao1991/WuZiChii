@@ -121,7 +121,7 @@
             return kWinner;
         }
         return kBrokenRule;
-    }else if (bingoCount == 4 ){
+    }else if (bingoCount == 4 && startPoint != nil && endPoint != nil){
         
         int beforeStartPoint = [matrix[startPoint.row][startPoint.section - 1] intValue];
         int afterEndPoint    = [matrix[endPoint.row][endPoint.section + 1] intValue];
@@ -194,7 +194,7 @@
             return kWinner;
         }
         return kBrokenRule;
-    }else if (bingoCount == 4 ){
+    }else if (bingoCount == 4 && startPoint != nil && endPoint != nil){
         
         int beforeStartPoint = [matrix[startPoint.row -1][startPoint.section] intValue];
         int afterEndPoint    = [matrix[endPoint.row +1][endPoint.section] intValue];
@@ -273,7 +273,7 @@
             return kWinner;
         }
         return kBrokenRule;
-    }else if (bingoCount == 4 ){
+    }else if (bingoCount == 4 && startPoint != nil && endPoint != nil){
         
         int beforeStartPoint = [matrix[startPoint.row +1][startPoint.section -1] intValue];
         int afterEndPoint    = [matrix[endPoint.row -1][endPoint.section +1] intValue];
@@ -352,7 +352,7 @@
             return kWinner;
         }
         return kBrokenRule;
-    }else if (bingoCount == 4 ){
+    }else if (bingoCount == 4 && startPoint != nil && endPoint != nil){
         
         int beforeStartPoint = [matrix[startPoint.row +1][startPoint.section +1] intValue];
         int afterEndPoint    = [matrix[endPoint.row -1][endPoint.section -1] intValue];

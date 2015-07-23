@@ -19,15 +19,51 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    CGRect rect = CGRectMake(0, self.view.frame.size.height/2-self.view.frame.size.width/2,
-                             self.view.frame.size.width, self.view.frame.size.height);
+    /* UIAlertController */
     
-    FivePoint *gameController = [[FivePoint alloc] initWithFrame:rect
-                                                         withRow:19
-                                                      withColumn:19
-                                                    withDelegate:self];
-    [gameController show];
     
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    UIAlertController *alertController =
+    [UIAlertController alertControllerWithTitle:@"輸入格數" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"Enter 1~19";
+    }];
+    
+    
+    UIAlertAction *cancelAction =
+    [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        //more to do
+    }];
+    UIAlertAction *doneAction =
+    [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //more to do
+        
+        UITextField *num = alertController.textFields.lastObject;
+        
+        
+        CGRect rect = CGRectMake(0, self.view.frame.size.height/2-self.view.frame.size.width/2,
+                                 self.view.frame.size.width, self.view.frame.size.height);
+        
+        FivePoint *gameController = [[FivePoint alloc] initWithFrame:rect
+                                                             withRow:[num.text integerValue]
+                                                          withColumn:[num.text integerValue]
+                                                        withDelegate:self];
+        [gameController show];
+        
+        
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:doneAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+
     
 }
 
@@ -42,19 +78,19 @@
 #pragma mark -
 -(void)fivePoint:(FivePoint *)fivePoint didTouchDot:(DotView *)dotView martixArray:(NSArray *)matrixArray{
  
-    NSLog(@"Now Touch Row :%ld , Column :%ld",(long)dotView.indexPath.row,(long)dotView.indexPath.section);
-    NSLog(@"Now is %@",matrixArray[dotView.indexPath.row][dotView.indexPath.section]);
-    
-    for (NSArray *columnArray in matrixArray) {
-        
-        NSLog(@"| %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ |",
-              columnArray[0],columnArray[1],columnArray[2],columnArray[3],
-              columnArray[4],columnArray[5],columnArray[6],columnArray[7],
-              columnArray[8],columnArray[9],columnArray[10],columnArray[11],
-              columnArray[12],columnArray[13],columnArray[14],columnArray[15],
-              columnArray[16],columnArray[17],columnArray[18]);
-        
-    }
+//    NSLog(@"Now Touch Row :%ld , Column :%ld",(long)dotView.indexPath.row,(long)dotView.indexPath.section);
+//    NSLog(@"Now is %@",matrixArray[dotView.indexPath.row][dotView.indexPath.section]);
+//    
+//    for (NSArray *columnArray in matrixArray) {
+//        
+//        NSLog(@"| %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ | %@ |",
+//              columnArray[0],columnArray[1],columnArray[2],columnArray[3],
+//              columnArray[4],columnArray[5],columnArray[6],columnArray[7],
+//              columnArray[8],columnArray[9],columnArray[10],columnArray[11],
+//              columnArray[12],columnArray[13],columnArray[14],columnArray[15],
+//              columnArray[16],columnArray[17],columnArray[18]);
+//        
+//    }
 
 }
 
